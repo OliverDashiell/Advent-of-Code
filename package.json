@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "answer": "node src/$npm_config_target/answer.js",
-        "setup": "node setup.js"
+        "answer": "node scripts/answer.js $npm_config_target",
+        "setup": "node scripts/setup.js $npm_config_target"
     }
 }
