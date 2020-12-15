@@ -12,6 +12,9 @@ console.log(`Running answer for ${args.target}.\n`)
 // get the input for the day
 let input = "";
 try {
+    // check the answer has been setup
+    if(!fs.existsSync(args.path)) require(`./setup.js`)
+    // read the input
     input = fs.readFileSync(`${args.path}/input.txt`, 'utf8')
 } catch (err) {
     console.error('Failed to load the input for this answer.')
